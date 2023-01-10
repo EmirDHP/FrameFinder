@@ -1,0 +1,32 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:FrameFinder"
+        xmlns:ni="http://schemas.ni.com/controls/2009/xaml/presentation" x:Class="FrameFinder.MainWindow"
+        mc:Ignorable="d"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        TextElement.FontWeight="Regular"
+        TextElement.FontSize="13"
+        TextOptions.TextFormattingMode="Ideal"
+        TextOptions.TextRenderingMode="Auto"
+        Background="{DynamicResource MaterialDesignPaper}"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        Title="Frame Finder" Height="517.441" Width="459.883" Icon="./Resources/busqueda.png">
+    <Grid>
+        <Grid x:Name="mainGrid" Background="WhiteSmoke" UIElement.PreviewKeyDown="Grid_PreviewKeyDown">
+            <Label x:Name="lblSalesOrder" Content="SalesOrder" HorizontalAlignment="Left" Margin="49,44,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.232,0.406" Height="24" Width="70"/>
+            <Label x:Name="lblFrame" Content="Frame" HorizontalAlignment="Left" Margin="65,138,0,0" VerticalAlignment="Top" Height="24" Width="43"/>
+            <Label x:Name="lblResult" HorizontalAlignment="Left" Margin="49,181,0,0" VerticalAlignment="Top" FontSize="15" Height="30" Width="354" RenderTransformOrigin="0.5,0.5" HorizontalContentAlignment="Center"/>
+            <Label x:Name="lblWorkOrder" Content="WorkOrder" HorizontalAlignment="Left" Margin="44,87,0,0" VerticalAlignment="Top" Height="24" Width="72"/>
+            <Label x:Name="lblVersion" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Height="8" Width="8"/>
+            <TextBox x:Name="txtSalesOrder" HorizontalAlignment="Left" Height="23" Margin="129,44,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+            <TextBox x:Name="txtWorkOrder" HorizontalAlignment="Left" Height="23" Margin="129,88,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+            <TextBox x:Name="txtFrame" HorizontalAlignment="Left" Height="23" Margin="129,138,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166"/>
+            <Button x:Name="btnSearch" Content="Search" HorizontalAlignment="Left" Margin="328,47,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#007bff" Background="#007bff" Click="btnSearch_Click"/>
+            <Button x:Name="btnClear" Content="Clear" HorizontalAlignment="Left" Margin="328,107,0,0" VerticalAlignment="Top" Width="75" BorderBrush="#5a6268" Background="#5a6268" Click="btnClear_Click"/>
+            <ListBox x:Name="listBox" HorizontalAlignment="Left" Height="185" Margin="49,263,0,0" VerticalAlignment="Top" Width="354" BorderThickness="1" BorderBrush="Gray" />
+        </Grid>
+    </Grid>
+</Window>
